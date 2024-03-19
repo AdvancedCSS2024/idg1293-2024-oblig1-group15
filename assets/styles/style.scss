@@ -1,1 +1,82 @@
 // USE THIS FILE TO CREATE THE LAYOUT AND SPECIFIC RULES FOR SCREENSHOTS 1 and 2
+@use "common.scss";
+
+.login-page {
+    display: flex;
+    justify-content: center;
+    max-width: 1178px;
+}
+
+.info-box {
+    display: none;
+    background-color: common.$ice;
+    text-align: center;
+    margin-top: 5rem;
+    padding-bottom: 5rem;
+    &__img {
+        width: 6.125rem;
+    height: 12.5rem;
+    margin: 0 auto;
+    padding-top: 1rem;
+    }
+    &__copy {
+        padding-inline: 2rem;
+    }
+}
+.input-group__help-text {
+    color: common.$stone;
+    font-size: 0.7.5rem;
+}
+.company-logos {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 0.5rem;
+    &__finn {
+        height: 1.125rem;
+    }
+    &__schibsted {
+        height: 1.5rem;
+    }
+}
+.footer-small {
+    display: flex;
+    padding-inline: 1rem;
+    max-width: 26rem;
+    margin: auto;
+    gap: 1rem;
+    overflow: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    background-color: common.$milk;
+    &__link {
+        font-weight: 400;
+        color: common.$licorice !important;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .login-page {
+        margin-top: 3rem;
+    }
+    .login-page {
+        padding: 2.5rem;
+    }
+    .footer-small {
+        justify-content: end;
+        background-color: transparent;
+        margin: 0;
+        max-width: 100%;
+        overflow: hidden;
+        margin-top: 2rem;
+    }
+    .company-logos {
+        margin-top: 0;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .info-box {
+        display: block;
+    }
+}
