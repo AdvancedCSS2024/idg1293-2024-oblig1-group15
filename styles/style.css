@@ -241,7 +241,7 @@
   padding-inline: 1rem;
 }
 
-.footers--small {
+.footer--small {
   display: flex;
   justify-content: start;
   padding-inline: 1rem;
@@ -253,7 +253,7 @@
   overflow-y: hidden;
   white-space: nowrap;
 }
-.footers__link--small {
+.footer__link--small {
   font-weight: 400;
   color: #464646 !important;
 }
@@ -301,6 +301,10 @@
 }
 .info-box__copy {
   padding-inline: 2rem;
+  margin-block: 0.5rem;
+}
+.info-box__help {
+  margin-bottom: 0.5rem;
 }
 
 .input-group__help-text {
