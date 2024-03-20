@@ -141,8 +141,8 @@
 }
 .input__icon:focus, .input__icon:hover, .checkbox-group__info:focus, .checkbox-group__info:hover {
   outline: none;
-  background-color: rgba(0, 0, 0, 0.05);
-  box-shadow: 0 0 0 0.7rem rgba(0, 0, 0, 0.05);
+  background-color: rgba(23, 23, 23, 0.05);
+  box-shadow: 0 0 0 0.7rem rgba(23, 23, 23, 0.05);
   border-radius: 50%;
 }
 .input__icon svg, .checkbox-group__info svg {

@@ -28,11 +28,7 @@ $lime: #059E6F;
 $pea: #2EE69F;
 $cherry: #D91F0A;
 $watermelon: #FF5844;
-
-// mine
-$background__main: #f8f8f8;
-$background__info: #f1f9ff;
-$dark__shadow: rgba(0, 0, 0, 0.05);
+$gray-900--shadow: rgba(23, 23, 23, 0.05);
 
 * {
     box-sizing: border-box;
@@ -180,8 +176,8 @@ $dark__shadow: rgba(0, 0, 0, 0.05);
     padding: 0;
     &:focus, &:hover {
         outline: none;
-        background-color: $dark__shadow;
-        box-shadow: 0 0 0 0.7rem $dark__shadow;
+        background-color: $gray-900--shadow;
+        box-shadow: 0 0 0 0.7rem $gray-900--shadow;
         border-radius: 50%;
     }
     svg {
