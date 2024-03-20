@@ -50,18 +50,12 @@
 .body a:hover {
   text-decoration: underline;
 }
-.body label {
-  font-weight: 600;
-  font-size: 1.25rem;
-}
-.body label.small {
-  font-size: 0.75rem;
-}
 
 .form {
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  max-width: 40rem;
 }
 .form__button-group {
   display: flex;
@@ -75,19 +69,15 @@
 
 .input {
   position: relative;
-  /*&__label {
-      color: $primary-blue !important;
-      font-size: 0.8rem !important;
-      top: 15%;
-      left: 0.75rem;
-      transform: translateY(-15%);
-  }*/
+  max-width: 40rem;
 }
 .input__label, .input__icon {
   position: absolute;
 }
 .input__label {
   z-index: 3;
+  font-weight: 600;
+  font-size: 1.25rem;
   pointer-events: none;
   position: absolute;
   color: #767676;
@@ -161,6 +151,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  max-width: 40rem;
 }
 .checkbox-group__label {
   font-size: 1rem !important;
@@ -247,7 +238,7 @@
   padding-inline: 1rem;
 }
 
-.footer--small {
+.footers--small {
   display: flex;
   justify-content: start;
   padding-inline: 1rem;
@@ -259,7 +250,7 @@
   overflow-y: hidden;
   white-space: nowrap;
 }
-.footer--small__link {
+.footers__link--small {
   font-weight: 400;
   color: #464646 !important;
 }

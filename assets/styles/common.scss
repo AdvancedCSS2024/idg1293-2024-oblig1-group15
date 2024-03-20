@@ -84,13 +84,6 @@ $dark__shadow: rgba(0, 0, 0, 0.05);
             text-decoration: underline;
         }
     }
-    label {
-        font-weight: 600;
-        font-size: 1.25rem;
-        &.small {
-            font-size: 0.75rem;
-        }
-    }
 }
 
 // Form and inputs
@@ -98,6 +91,7 @@ $dark__shadow: rgba(0, 0, 0, 0.05);
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    max-width: 40rem;
     &__button-group {
         display: flex;
         flex-direction: column;
@@ -110,11 +104,14 @@ $dark__shadow: rgba(0, 0, 0, 0.05);
 }
 .input {
     position: relative;
+    max-width: 40rem;
     &__label, &__icon {
         position: absolute;
     }
     &__label {
         z-index: 3;
+        font-weight: 600;
+        font-size: 1.25rem;
         pointer-events: none;
         position: absolute;
         color: $stone;
@@ -169,33 +166,25 @@ $dark__shadow: rgba(0, 0, 0, 0.05);
             }
         }
     }
-    /*&__label {
-        color: $primary-blue !important;
-        font-size: 0.8rem !important;
-        top: 15%;
-        left: 0.75rem;
-        transform: translateY(-15%);
-    }*/
 }
-
 .input__icon, .checkbox-group__info {
     z-index: 2;
-        background-color: transparent;
-        border: none;
-        cursor: pointer;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    width: 1.5rem;
+    height: 1.5rem;
+    padding: 0;
+    &:focus, &:hover {
+        outline: none;
+        background-color: $dark__shadow;
+        box-shadow: 0 0 0 0.7rem $dark__shadow;
+        border-radius: 50%;
+    }
+    svg {
         width: 1.5rem;
         height: 1.5rem;
-        padding: 0;
-        &:focus, &:hover {
-            outline: none;
-            background-color: $dark__shadow;
-            box-shadow: 0 0 0 0.7rem $dark__shadow;
-            border-radius: 50%;
-        }
-        svg {
-            width: 1.5rem;
-            height: 1.5rem;
-        }
+    }
 }
 
 // Checkboxes
@@ -203,6 +192,7 @@ $dark__shadow: rgba(0, 0, 0, 0.05);
     display: flex;
     align-items: center;
     justify-content: space-between;
+    max-width: 40rem;
     &__label {
         font-size: 1rem !important;
         font-weight: 400 !important;
@@ -291,8 +281,8 @@ $dark__shadow: rgba(0, 0, 0, 0.05);
     }
 }
 
-// Footer
-.footer {
+// Footers
+.footers {
     &--small {
         display: flex;
         justify-content: start;
@@ -304,10 +294,10 @@ $dark__shadow: rgba(0, 0, 0, 0.05);
         overflow: scroll;
         overflow-y: hidden;
         white-space: nowrap;
-        &__link {
-            font-weight: 400;
-            color: $licorice !important;
-        }
+    }
+    &__link--small {
+        font-weight: 400;
+        color: $licorice !important;
     }
 }
 

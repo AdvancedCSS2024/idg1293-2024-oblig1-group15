@@ -75,22 +75,15 @@
 
 .input {
   position: relative;
-  /*&__label {
-      color: $primary-blue !important;
-      font-size: 0.8rem !important;
-      top: 15%;
-      left: 0.75rem;
-      transform: translateY(-15%);
-  }*/
 }
 .input__label, .input__icon {
   position: absolute;
 }
 .input__label {
   z-index: 3;
-  color: #767676;
   pointer-events: none;
   position: absolute;
+  color: #767676;
   top: 50%;
   left: 0.75rem;
   transform: translateY(-50%);
@@ -111,6 +104,30 @@
   padding: 2.446rem 0.75rem 1.2rem;
   font-size: 1.25rem !important;
   width: 100%;
+}
+.input__field:not(placeholder-shown) + .input__label {
+  font-size: 0.8rem !important;
+  top: 15%;
+  left: 0.75rem;
+  transform: translateY(-15%);
+}
+.input__field:placeholder-shown + .input__label {
+  color: #767676 !important;
+  top: 50%;
+  left: 0.75rem;
+  transform: translateY(-50%);
+  font-size: 1.25rem !important;
+}
+.input__field:focus {
+  outline: none;
+  border-bottom: 0.15rem solid #0063fb;
+}
+.input__field:focus + .input__label {
+  color: #0063fb !important;
+  font-size: 0.8rem !important;
+  top: 15%;
+  left: 0.75rem;
+  transform: translateY(-15%);
 }
 
 .input__icon, .checkbox-group__info {
@@ -235,7 +252,7 @@
   overflow-y: hidden;
   white-space: nowrap;
 }
-.footer--small__link {
+.footer__link--small {
   font-weight: 400;
   color: #464646 !important;
 }
