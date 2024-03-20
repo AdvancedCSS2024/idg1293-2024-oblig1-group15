@@ -1,8 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Akshar:wght@300..700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Wix+Madefor+Display:wght@400..800&display=swap");
-.body {
+* {
+  box-sizing: border-box;
   margin: 0;
+}
+
+.body {
   font-size: 0.938rem;
   line-height: 1.3;
   letter-spacing: 0.016rem;
@@ -11,6 +13,7 @@
 }
 .body h1, .body h2, .body h3, .body h4, .body h5 {
   font-weight: 700;
+  margin-top: 1rem;
   margin-bottom: 0.5rem;
 }
 .body h1, .body .text-34 {
@@ -55,20 +58,120 @@
   font-size: 0.75rem;
 }
 
-.icon {
-  width: 24px;
-  height: 24px;
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
-
-.input-group__icon {
-  width: 24px;
-  height: 24px;
-}
-
 .form__button-group {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+}
+.form__help {
+  text-decoration: underline !important;
+  max-width: 7.5rem;
+}
+
+.input {
+  position: relative;
+  /*&__label {
+      color: $primary-blue !important;
+      font-size: 0.8rem !important;
+      top: 15%;
+      left: 0.75rem;
+      transform: translateY(-15%);
+  }*/
+}
+.input__label, .input__icon {
+  position: absolute;
+}
+.input__label {
+  z-index: 3;
+  color: #767676;
+  pointer-events: none;
+  position: absolute;
+  top: 50%;
+  left: 0.75rem;
+  transform: translateY(-50%);
+  transition: font-size 0.3s ease;
+}
+.input__icon {
+  top: 50%;
+  right: 0.75rem;
+  transform: translateY(-50%);
+}
+.input__field {
+  background-color: #e5e5e5;
+  border-radius: 0.3rem 0.3rem 0 0;
+  border: none;
+  border-bottom: 0.01rem solid #767676;
+  z-index: 1;
+  height: 1.5rem;
+  padding: 2.446rem 0.75rem 1.2rem;
+  font-size: 1.25rem !important;
+  width: 100%;
+}
+.input__field:focus {
+  outline: none;
+  border-bottom: 0.15rem solid #0063fb;
+}
+.input__field:focus + .input__label {
+  color: #0063fb !important;
+  font-size: 0.8rem !important;
+  top: 15%;
+  left: 0.75rem;
+  transform: translateY(-15%);
+}
+
+.input__icon, .checkbox-group__info {
+  z-index: 2;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  width: 1.5rem;
+  height: 1.5rem;
+  padding: 0;
+}
+.input__icon:focus, .input__icon:hover, .checkbox-group__info:focus, .checkbox-group__info:hover {
+  outline: none;
+  background-color: rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0 0 0.7rem rgba(0, 0, 0, 0.05);
+  border-radius: 50%;
+}
+.input__icon svg, .checkbox-group__info svg {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.checkbox-group {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.checkbox-group__label {
+  font-size: 1rem !important;
+  font-weight: 400 !important;
+}
+.checkbox-group__checkbox {
+  width: 1.2rem;
+  height: 1.2rem;
+}
+.checkbox-group__checkbox--primary {
+  accent-color: #0063fb;
+}
+.checkbox-group__checkbox:focus, .checkbox-group__checkbox:hover {
+  outline: none;
+  background-color: #F1F9FF;
+  box-shadow: 0 0 0 0.7rem #F1F9FF;
+}
+.checkbox-group__main {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.checkbox-group__info {
+  margin-right: 0.75rem;
 }
 
 .button {
@@ -79,18 +182,23 @@
   font-weight: 500;
   cursor: pointer;
 }
+.button:hover {
+  transition: 0.3s ease-in-out;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25);
+}
 .button--primary {
   background-color: #0063fb;
   color: #FFFFFF;
+}
+.button--primary:hover {
+  background-color: #004fc8;
 }
 .button--primary-inverse {
   background-color: #FFFFFF;
   color: #0063fb;
 }
 .button--primary-inverse:hover {
-  transition: 0.3s;
-  background-color: #F6F8FB;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25);
+  background-color: #fafafa;
 }
 .button--tertiary {
   background-color: #FFFFFF;
@@ -108,9 +216,6 @@
 .card {
   border-radius: 0.5rem;
 }
-.card__body, .card__header, .card__footer {
-  padding-inline: 2rem;
-}
 .card--white {
   background-color: #FFFFFF;
 }
@@ -120,10 +225,17 @@
 .card--login {
   width: 100vw;
 }
+.card__divide {
+  margin-block: 0.5rem;
+  border: 0.01rem solid #C3CCD9;
+}
 
 @media screen and (min-width: 600px) {
   .card {
     box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.35);
+  }
+  .card__body, .card__header, .card__footer {
+    padding-inline: 2rem;
   }
   .card--login {
     margin-top: 3.125rem;

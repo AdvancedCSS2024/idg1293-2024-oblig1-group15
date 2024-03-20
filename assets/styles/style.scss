@@ -5,6 +5,7 @@
     display: flex;
     justify-content: center;
     max-width: 1178px;
+    background-color: common.$milk;
 }
 
 .info-box {
@@ -12,7 +13,6 @@
     background-color: common.$ice;
     text-align: center;
     margin-top: 5rem;
-    padding-bottom: 5rem;
     &__img {
         width: 6.125rem;
     height: 12.5rem;
@@ -25,7 +25,7 @@
 }
 .input-group__help-text {
     color: common.$stone;
-    font-size: 0.7.5rem;
+    font-size: 0.75rem !important;
 }
 .company-logos {
     display: flex;
@@ -41,14 +41,15 @@
 }
 .footer-small {
     display: flex;
+    justify-content: center;
     padding-inline: 1rem;
-    max-width: 26rem;
+    padding-top: 1rem;
+    max-width: 27.5rem;
     margin: auto;
     gap: 1rem;
     overflow: scroll;
     overflow-y: hidden;
     white-space: nowrap;
-    background-color: common.$milk;
     &__link {
         font-weight: 400;
         color: common.$licorice !important;
@@ -58,14 +59,14 @@
 @media screen and (min-width: 600px) {
     .login-page {
         margin-top: 3rem;
+        background-color: transparent;
     }
     .login-page {
         padding: 2.5rem;
     }
     .footer-small {
-        justify-content: end;
-        background-color: transparent;
         margin: 0;
+        padding: 0;
         max-width: 100%;
         overflow: hidden;
         margin-top: 2rem;
@@ -78,5 +79,6 @@
 @media screen and (min-width: 800px) {
     .info-box {
         display: block;
+        max-height: 30rem;
     }
 }
