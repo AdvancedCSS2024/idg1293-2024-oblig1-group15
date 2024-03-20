@@ -215,6 +215,7 @@
 
 .card {
   border-radius: 0.5rem;
+  max-width: 100%;
 }
 .card--white {
   background-color: #FFFFFF;
@@ -229,12 +230,32 @@
   margin-block: 0.5rem;
   border: 0.01rem solid #C3CCD9;
 }
+.card__body, .card__header {
+  padding-inline: 1rem;
+}
+
+.footer--small {
+  display: flex;
+  justify-content: start;
+  padding-inline: 1rem;
+  padding-top: 1rem;
+  max-width: 27.5rem;
+  margin: auto;
+  gap: 1rem;
+  overflow: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+.footer--small__link {
+  font-weight: 400;
+  color: #464646 !important;
+}
 
 @media screen and (min-width: 600px) {
   .card {
     box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.35);
   }
-  .card__body, .card__header, .card__footer {
+  .card__body, .card__header {
     padding-inline: 2rem;
   }
   .card--login {
@@ -245,5 +266,13 @@
   }
   .card__divide {
     display: none;
+  }
+  .footer--small {
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    overflow: hidden;
+    margin-top: 2rem;
   }
 }/*# sourceMappingURL=common.css.map */

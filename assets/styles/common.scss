@@ -253,6 +253,7 @@ $dark__shadow: rgba(0, 0, 0, 0.05);
 // Cards
 .card {
     border-radius: 0.5rem;
+    max-width: 100%;
     &--white {
         background-color: $milk;
     }
@@ -266,12 +267,35 @@ $dark__shadow: rgba(0, 0, 0, 0.05);
         margin-block: 0.5rem;
         border: 0.01rem solid $sardine;
     }
+    &__body, &__header {
+        padding-inline: 1rem;
+    }
+}
+
+// Footer
+.footer {
+    &--small {
+        display: flex;
+        justify-content: start;
+        padding-inline: 1rem;
+        padding-top: 1rem;
+        max-width: 27.5rem;
+        margin: auto;
+        gap: 1rem;
+        overflow: scroll;
+        overflow-y: hidden;
+        white-space: nowrap;
+        &__link {
+            font-weight: 400;
+            color: $licorice !important;
+        }
+    }
 }
 
 @media screen and (min-width: 600px) {
     .card {
         box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.35);
-        &__body, &__header, &__footer {
+        &__body, &__header {
             padding-inline: 2rem;
         }
         &--login {
@@ -283,5 +307,13 @@ $dark__shadow: rgba(0, 0, 0, 0.05);
         &__divide {
             display: none;
         }
+    }
+    .footer--small {
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+        max-width: 100%;
+        overflow: hidden;
+        margin-top: 2rem;
     }
 }
