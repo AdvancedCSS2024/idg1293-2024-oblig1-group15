@@ -11,6 +11,9 @@
   font-family: "Wix Madefor Display", sans-serif;
   background-color: #F6F8FB;
 }
+.body--demo {
+  padding: 1rem;
+}
 .body h1, .body h2, .body h3, .body h4, .body h5 {
   font-weight: 700;
   margin-top: 1rem;
@@ -238,7 +241,7 @@
   padding-inline: 1rem;
 }
 
-.footers--small {
+.footer--small {
   display: flex;
   justify-content: start;
   padding-inline: 1rem;
@@ -250,7 +253,7 @@
   overflow-y: hidden;
   white-space: nowrap;
 }
-.footers__link--small {
+.footer__link--small {
   font-weight: 400;
   color: #464646 !important;
 }
