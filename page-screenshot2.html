@@ -47,14 +47,15 @@
                         <form class="form">
                             <div class="input-group">
                                 <div class="input">
-                                    <label for="email" class="input__label"
-                                        >Skriv inn din e-postadresse*</label
-                                    >
                                     <input
                                         type="email"
                                         class="input__field"
                                         id="email"
+                                        placeholder=" "
                                     />
+                                    <label for="email" class="input__label"
+                                        >Skriv inn din e-postadresse*</label
+                                    >
                                     <button
                                         label="Clear email address"
                                         class="input__icon"
@@ -82,6 +83,12 @@
                             </div>
                             <div class="input-group">
                                 <div class="input">
+                                    <input
+                                        class="input__field input__field--password"
+                                        id="password"
+                                        type="password"
+                                        placeholder=" "
+                                    />
                                     <label for="email" class="input__label"
                                         >Vennligst oppgi passordet ditt*</label
                                     >
@@ -152,11 +159,6 @@
                                             </defs>
                                         </svg>
                                     </button>
-                                    <input
-                                        class="input__field input__field--password"
-                                        id="password"
-                                        type="password"
-                                    />
                                 </div>
                                 <p class="input-group__help-text">
                                     *Nødvendig felt

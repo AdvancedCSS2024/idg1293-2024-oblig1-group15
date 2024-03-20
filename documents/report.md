@@ -7,3 +7,5 @@ Finn uses typefaces exclusively owned by them, so we had to find a free typeface
 Can't find any way to download the icons used by Finn.
 
 The closest color from Fabric was chosen for the few instances were the finn website used a color not listed in Fabric.
+
+[The placeholder-shown method used for input labels and fields in common.scss was gotten from from Stack Overflow](https://stackoverflow.com/questions/16952526/detect-if-an-input-has-text-in-it-using-css-on-a-page-i-am-visiting-and-do-no)

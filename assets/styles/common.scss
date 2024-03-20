@@ -115,9 +115,9 @@ $dark__shadow: rgba(0, 0, 0, 0.05);
     }
     &__label {
         z-index: 3;
-        color: $stone;
         pointer-events: none;
         position: absolute;
+        color: $stone;
         top: 50%;
         left: 0.75rem;
         transform: translateY(-50%);
@@ -138,6 +138,25 @@ $dark__shadow: rgba(0, 0, 0, 0.05);
         padding: 2.446rem 0.75rem 1.2rem;
         font-size: 1.25rem !important;
         width: 100%;
+        // placeholder-shown method from Stack Overflow
+        // https://stackoverflow.com/questions/16952526/detect-if-an-input-has-text-in-it-using-css-on-a-page-i-am-visiting-and-do-no
+        &:not(placeholder-shown) {
+            + .input__label {
+                font-size: 0.8rem !important;
+                top: 15%;
+                left: 0.75rem;
+                transform: translateY(-15%);
+            }
+        }
+        &:placeholder-shown {
+            + .input__label {
+                color: $stone !important;
+                top: 50%;
+                left: 0.75rem;
+                transform: translateY(-50%);
+                font-size: 1.25rem !important;
+            }
+        }
         &:focus {
             outline: none;
             border-bottom: 0.15rem solid $primary-blue;
@@ -214,7 +233,7 @@ $dark__shadow: rgba(0, 0, 0, 0.05);
 .button {
     border: none;
     border-radius: 0.5rem;
-    padding: 1rem;
+    padding: 0.86rem 1rem 0.86rem 1rem;
     font-size: 1.063rem;
     font-weight: 500;
     cursor: pointer;

@@ -88,9 +88,9 @@
 }
 .input__label {
   z-index: 3;
-  color: #767676;
   pointer-events: none;
   position: absolute;
+  color: #767676;
   top: 50%;
   left: 0.75rem;
   transform: translateY(-50%);
@@ -111,6 +111,19 @@
   padding: 2.446rem 0.75rem 1.2rem;
   font-size: 1.25rem !important;
   width: 100%;
+}
+.input__field:not(placeholder-shown) + .input__label {
+  font-size: 0.8rem !important;
+  top: 15%;
+  left: 0.75rem;
+  transform: translateY(-15%);
+}
+.input__field:placeholder-shown + .input__label {
+  color: #767676 !important;
+  top: 50%;
+  left: 0.75rem;
+  transform: translateY(-50%);
+  font-size: 1.25rem !important;
 }
 .input__field:focus {
   outline: none;
@@ -177,7 +190,7 @@
 .button {
   border: none;
   border-radius: 0.5rem;
-  padding: 1rem;
+  padding: 0.86rem 1rem 0.86rem 1rem;
   font-size: 1.063rem;
   font-weight: 500;
   cursor: pointer;
