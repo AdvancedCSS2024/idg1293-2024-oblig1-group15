@@ -22,18 +22,6 @@
         margin-bottom: 0.5rem;
     }
 }
-.company-logos {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 0.5rem;
-    &__finn {
-        height: 1.125rem;
-    }
-    &__schibsted {
-        height: 1.5rem;
-    }
-}
 
 @media screen and (min-width: 600px) {
     .login-page {
@@ -45,9 +33,6 @@
     }
     .login-page {
         padding: 2.5rem;
-    }
-    .company-logos {
-        margin-top: 0;
     }
 }
 

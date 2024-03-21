@@ -283,6 +283,20 @@ $gray-900--shadow: rgba(23, 23, 23, 0.05);
     &__body, &__header {
         padding-inline: 1rem;
     }
+    &__company-logos {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 0.5rem;
+    }
+}
+.company-logo {
+    &--finn {
+        height: 1.125rem;
+    }
+    &--schibsted {
+        height: 1.5rem;
+    }
 }
 
 // Footers
@@ -319,6 +333,9 @@ $gray-900--shadow: rgba(23, 23, 23, 0.05);
         }
         &__divide {
             display: none;
+        }
+        &__company-logos {
+            margin-top: 0;
         }
     }
     .footer--small {

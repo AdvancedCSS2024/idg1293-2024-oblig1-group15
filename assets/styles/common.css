@@ -245,6 +245,19 @@
 .card__body, .card__header {
   padding-inline: 1rem;
 }
+.card__company-logos {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 0.5rem;
+}
+
+.company-logo--finn {
+  height: 1.125rem;
+}
+.company-logo--schibsted {
+  height: 1.5rem;
+}
 
 .footer--small {
   display: flex;
@@ -278,6 +291,9 @@
   }
   .card__divide {
     display: none;
+  }
+  .card__company-logos {
+    margin-top: 0;
   }
   .footer--small {
     justify-content: center;
