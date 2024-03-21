@@ -57,13 +57,13 @@
 
 .main-page-content-body {
     justify-self: center;
-    margin-left: 25%;
-    margin-right: 25%;
+    margin-left: 40px;
+    margin-right: 40px;
 }
 
-.search-and-map {
+// .search-and-map {
     
-}
+// }
 
 .search-area {
     width: 100%;
@@ -98,6 +98,10 @@
 .grid-layout__item--10 { grid-area: 2 / 4 / 3 / 5; }
 .grid-layout__item--11 { grid-area: 2 / 5 / 3 / 6; }
 .grid-layout__item--12 { grid-area: 2 / 6 / 3 / 7; }
+
+
+
+    
 
 @media screen and (min-width: 600px) {
     .login-page {

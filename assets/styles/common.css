@@ -55,6 +55,12 @@
   font-size: 0.75rem;
 }
 
+.box__favorite {
+  position: relative;
+  top: 16px;
+  right: 16px;
+}
+
 .icon {
   width: 24px;
   height: 24px;
@@ -119,6 +125,66 @@
 }
 .card--login {
   width: 100vw;
+}
+.card__box {
+  display: flex !important;
+  flex-wrap: wrap;
+  gap: 35px;
+  justify-content: center;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  font-family: "Wix Madefor Display", sans-serif;
+}
+.card__ad {
+  width: 300px;
+  padding: 10px;
+  border-radius: 5px;
+  position: relative;
+  text-decoration: none;
+}
+.card__anchor {
+  text-decoration: none;
+}
+.card__figure {
+  border: 2px rgb(189, 215, 241) solid;
+  border-radius: 10px;
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+}
+.card__image {
+  border-radius: 8px;
+  max-width: 100%;
+}
+.card__price {
+  color: white;
+}
+.card__favorite {
+  display: flex;
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  z-index: 5;
+  width: 45px;
+  height: 45px;
+  align-items: center;
+  justify-content: center;
+}
+.card__favorite--icon {
+  color: white;
+}
+.card__location--text {
+  color: gray;
+}
+.card__title {
+  word-break: break-all;
+}
+.card__price {
+  color: white;
 }
 
 @media screen and (min-width: 600px) {

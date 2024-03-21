@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Screenshot 1 page</title>
-    <link rel="stylesheet" href="styles/style.css" />
-    <link rel="stylesheet" href="styles/common.css" />
+    <link rel="stylesheet" href="assets/styles/style.css">
+    <link rel="stylesheet" href="assets/styles/common.css">
   </head>
   <body class="main-page-content-body">
     <header>
@@ -441,106 +441,94 @@
 
       <section>
         <div>
-          <h1 class="text-22">Populære annonser</h1>
+          <h1 class="">Populære annonser</h1>
         </div>
-        <div class="grid-ads">
-
+        <section class="card__box">
           <!-- when you hover over one of the ads, the background-color of article changes to --f-aqua-50 -->
-          <article class="hover:bg-aqua-50 focus:bg-aqua-50">
-            <div class="image">
-              <img class="" src="" alt="">
+          <article class="card__ad">
+            <a class="card__anchor" href="https://www.finn.no/344953368">
+            <div class="card__figure">
+              <img class="card__image"
+                src="assets/images/annonse1.jpg"
+                alt="">
               <!-- this span element will have a black gradient either using the style="" class or through a stylesheet -->
               <span>
-                <div class="absolute">800 kr</div>
+                <div class="card__price">800 kr</div>
               </span>
-            </div>
-      
-            <div class="text-12">
-              <span class="text-gray-500">Kristiansand S</span>
-            </div>
+              </div>
 
-            <h2 class="break-words">
-              <a href="">
-                <!-- this <span> element overflows the anchor element and has position absolute-->
-                <span class="absolute inset-0"></span>
+              <div class="card__location">
+                <span class="card__location--text">Kristiansand S</span>
+              </div>
+
+              <h2 class="card__wordbreak">
+      
                 "Gitar med forsterker og pose"
-              </a>
-
-              <!-- this div is a flex container for some reason, perhaps in column to create a changing gap between the ad below  -->
-              <div></div>
-            </h2>
-      
-            <div class="absolute top-16 right-16">
-              <button class="" title="Legg til favoritt"></button>
-            </div>
-            <!-- this div doesn't have any function seemingly, but it has the same size as the container <article> -->
-            <div class="absolute">
               
-            </div>
+              </h2>
+              <button class="card__favorite" title="Legg til favoritt">
+                <img class="card__favorite--icon" src="assets/images/heart_icon_default.svg" alt="">
+              </button>
+            </a>
           </article>
 
-          <article class="hover:bg-aqua-50 focus:bg-aqua-50">
-            <div class="image">
-              <img class="" src="" alt="">
+          <article class="card__ad">
+            <a class="card__anchor" href="https://www.finn.no/343954326">
+            <div class="card__figure">
+              <img
+                class="card__image"
+                src="assets/images/annonse2.jpg"
+                alt=""
+              />
               <span>
                 <div class="absolute">800 kr</div>
               </span>
             </div>
-      
-            <div class="text-12">
-              <span class="text-gray-500">Kristiansand S</span>
+
+            <div class="card__location">
+              <span class="card__location--text">Kristiansand S</span>
             </div>
 
             <h2 class="break-words">
-              <a href="">
-                <span class="absolute inset-0"></span>
+                <span class="absolute"></span>
                 "Gitar med forsterker og pose"
-              </a>
-
-              <div></div>
             </h2>
-      
-            <div class="absolute top-16 right-16">
-              <button class="" title="Legg til favoritt"></button>
-            </div>
-            <div class="absolute">
-              
-            </div>
+
+            <button class="card__favorite" title="Legg til favoritt">
+              <img class="card__favorite--icon" src="assets/images/heart_icon_default.svg" alt="">
+            </button>
+            </a>
           </article>
 
-          <article class="hover:bg-aqua-50 focus:bg-aqua-50">
-            <div class="image">
-              <img class="" src="" alt="">
+          <article class="card__ad">
+            <div class="card__figure">
+              <img
+                class="card__image"
+                src="assets/images/annonse3.jpg"
+                alt=""
+              />
               <span>
                 <div class="absolute">800 kr</div>
               </span>
             </div>
-      
-            <div class="text-12">
-              <span class="text-gray-500">Kristiansand S</span>
+
+            <div class="card__location">
+              <span class="card__location--text">Kristiansand S</span>
             </div>
 
             <h2 class="break-words">
-              <a href="">
-                <span class="absolute inset-0"></span>
+              <a href="https://www.finn.no/343358200">
+                <span class="absolute"></span>
                 "Gitar med forsterker og pose"
               </a>
-
-              <div></div>
             </h2>
-      
-            <div class="absolute top-16 right-16">
-              <button class="" title="Legg til favoritt"></button>
-            </div>
-            
-            <div class="absolute">
-              
-            </div>
+
+            <button class="card__favorite" title="Legg til favoritt">
+              <img class="card__favorite--icon" src="assets/images/heart_icon_default.svg" alt="">
+            </button>
           </article>
-      
         </div>
       </section>
-
     </main>
   </body>
 </html>
