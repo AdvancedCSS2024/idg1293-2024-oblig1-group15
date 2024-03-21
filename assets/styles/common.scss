@@ -118,6 +118,7 @@ $gray-900--shadow: rgba(23, 23, 23, 0.05);
         left: 0.75rem;
         transform: translateY(-50%);
         transition: font-size 0.3s ease;
+        padding-right: 2.7rem;
     }
     &__icon {
         top: 50%;
@@ -131,7 +132,7 @@ $gray-900--shadow: rgba(23, 23, 23, 0.05);
         border-bottom: 0.01rem solid $stone;
         z-index: 1;
         height: 1.5rem;
-        padding: 2.446rem 0.75rem 1.2rem;
+        padding: 2.446rem 2.7rem 1.2rem 0.75rem;
         font-size: 1.25rem !important;
         width: 100%;
         // placeholder-shown method from Stack Overflow
@@ -164,6 +165,10 @@ $gray-900--shadow: rgba(23, 23, 23, 0.05);
                 transform: translateY(-15%);
             }
         }
+    }
+    &__help-text {
+        color: $stone;
+        font-size: 0.75rem !important;
     }
 }
 .input__icon, .checkbox-group__info {

@@ -101,7 +101,6 @@
   border-bottom: 0.01rem solid #767676;
   z-index: 1;
   height: 1.5rem;
-  padding: 2.446rem 0.75rem 1.2rem;
   font-size: 1.25rem !important;
   width: 100%;
 }
@@ -129,6 +128,10 @@
   left: 0.75rem;
   transform: translateY(-15%);
 }
+.input__help-text {
+  color: #767676;
+  font-size: 0.75rem !important;
+}
 
 .input__icon, .checkbox-group__info {
   z-index: 2;
@@ -141,8 +144,8 @@
 }
 .input__icon:focus, .input__icon:hover, .checkbox-group__info:focus, .checkbox-group__info:hover {
   outline: none;
-  background-color: rgba(0, 0, 0, 0.05);
-  box-shadow: 0 0 0 0.7rem rgba(0, 0, 0, 0.05);
+  background-color: rgba(23, 23, 23, 0.05);
+  box-shadow: 0 0 0 0.7rem rgba(23, 23, 23, 0.05);
   border-radius: 50%;
 }
 .input__icon svg, .checkbox-group__info svg {
@@ -304,11 +307,6 @@
 }
 .info-box__help {
   margin-bottom: 0.5rem;
-}
-
-.input-group__help-text {
-  color: #767676;
-  font-size: 0.75rem !important;
 }
 
 .company-logos {
