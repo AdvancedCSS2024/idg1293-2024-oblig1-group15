@@ -71,6 +71,8 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  font-family: "Wix Madefor Display", sans-serif;
+  padding: 0 20rem;
 }
 
 .nav__anchor {
