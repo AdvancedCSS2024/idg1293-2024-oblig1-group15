@@ -1,6 +1,25 @@
 // USE THIS FILE TO CREATE THE LAYOUT AND SPECIFIC RULES FOR SCREENSHOTS 1 and 2
-@use "common.scss";
+@use "common.scss" as *;
 
+.login-page {
+    background-color: $milk;
+}
+.info-box {
+    display: none;
+    background-color: $ice;
+    text-align: center;
+    margin-top: 5rem;
+    &__img {
+        width: 6.125rem;
+        height: 12.5rem;
+        margin: 1rem auto 0.5rem auto;
+    }
+    &__copy {
+        padding-inline: 2rem;
+        margin-block: 0.5rem;
+    }
+    &__help {
+        margin-bottom: 0.5rem;
 
 header {
     margin-bottom: 2rem;
@@ -81,26 +100,20 @@ margin: 0 25rem;
 
 @media screen and (min-width: 600px) {
     .login-page {
+        background-color: transparent;
         margin-top: 3rem;
+        display: flex;
+        justify-content: center;
+        max-width: 1178px;
     }
     .login-page {
         padding: 2.5rem;
-    }
-    .footer-small {
-        justify-content: end;
-        background-color: transparent;
-        margin: 0;
-        max-width: 100%;
-        overflow: hidden;
-        margin-top: 2rem;
-    }
-    .company-logos {
-        margin-top: 0;
     }
 }
 
 @media screen and (min-width: 800px) {
     .info-box {
         display: block;
+        max-height: 30rem;
     }
 }

@@ -1,11 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Screenshot 1 page</title>
-</head>
-<body>
-  
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Screenshot 1 page</title>
+        <link rel="stylesheet" href="assets/styles/style.css" />
+        <link rel="stylesheet" href="assets/styles/common.css" />
+    </head>
+    <body class="body">
+        <div class="login-page">
+            <div class="info-box">
+                <img
+                    src="assets/images/finn_iphone_98x200.png"
+                    alt="Phone with the Finn.no website open"
+                    class="info-box__img"
+                />
+                <p class="info-box__copy">
+                    Logg inn for å sende meldinger, lagre favoritter og søk. Du
+                    får også varsler når det skjer noe nytt!
+                </p>
+                <p class="info-box__help">
+                    Problemer med innloggingen?
+                    <a href="#">Her kan du finne hjelp</a>
+                </p>
+                <a href="#" class="info-box__return">Tilbake til FINN</a>
+            </div>
+            <main class="main main--login">
+                <div class="card card--white card--login">
+                    <div class="card__header">
+                        <div class="card__company-logos">
+                            <img
+                                class="company-logo company-logo--finn"
+                                src="assets/images/finn.png"
+                                alt="Finn logo"
+                            />
+                            <img
+                                src="assets/images/schibsted.png"
+                                alt="Schibsted logo"
+                                class="company-logo company-logo--schibsted"
+                            />
+                        </div>
+                    </div>
+                    <hr class="card__divide" />
+                    <div class="card__body">
+                        <h1 class="card__heading">Logg inn</h1>
+                        <form class="form">
+                            <div class="input-group">
+                                <div class="input">
+                                    <input
+                                        type="email"
+                                        class="input__field"
+                                        id="email"
+                                        placeholder=" "
+                                    />
+                                    <label for="email" class="input__label"
+                                        >Skriv inn din e-postadresse*</label
+                                    >
+                                    <button
+                                        label="Clear email address"
+                                        class="input__icon input__icon--clear"
+                                    >
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="24"
+                                            height="24"
+                                            fill="none"
+                                            viewBox="0 0 24 24"
+                                            transform="rotate(45)"
+                                        >
+                                            <path
+                                                fill="currentColor"
+                                                fill-rule="evenodd"
+                                                d="M1.5 12C1.5 6.201 6.201 1.5 12 1.5S22.5 6.201 22.5 12 17.799 22.5 12 22.5 1.5 17.799 1.5 12zM12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm0 6.75a.75.75 0 01.75.75v3.75h3.75a.75.75 0 010 1.5h-3.75v3.75a.75.75 0 01-1.5 0v-3.75H7.5a.75.75 0 010-1.5h3.75V7.5a.75.75 0 01.75-.75z"
+                                                clip-rule="evenodd"
+                                            ></path>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <p class="input__help-text">*Nødvendig felt</p>
+                            </div>
+                            <div class="input-group">
+                                <div class="input">
+                                    <input
+                                        class="input__field input__field--password"
+                                        id="password"
+                                        type="password"
+                                        placeholder=" "
+                                    />
+                                    <label for="email" class="input__label"
+                                        >Vennligst oppgi passordet ditt*</label
+                                    >
+                                    <button
+                                        label="Toggle password visibility"
+                                        class="input__icon"
+                                    >
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="24"
+                                            height="24"
+                                            fill="none"
+                                            viewBox="0 0 24 24"
+                                        >
+                                            <g
+                                                clip-path="url(#XzHLcclip0_1199_68)"
+                                            >
+                                                <path
+                                                    fill="currentColor"
+                                                    fill-rule="evenodd"
+                                                    d="M23.38 10.38C20.7 7.434 16.344 4.434 12 4.5 7.656 4.435 3.301 7.435.624 10.38l-.002.003a2.413 2.413 0 000 3.23l.002.002c2.617 2.882 6.96 5.951 11.376 5.883 4.417.068 8.76-3 11.38-5.883l.002-.002a2.413 2.413 0 000-3.23l-.003-.003zM1.501 11.998c0-.225.083-.442.234-.61 2.562-2.82 6.539-5.45 10.252-5.387h.025c3.713-.063 7.69 2.567 10.255 5.387a.913.913 0 010 1.22c-2.51 2.763-6.476 5.454-10.255 5.39H11.987c-3.778.064-7.743-2.627-10.251-5.39a.913.913 0 01-.234-.61zM12 8.999a3 3 0 013 3 3 3 0 11-3-3zm1.722-1.158A4.499 4.499 0 0012 7.5L16.5 12a4.499 4.499 0 00-2.778-4.159zM9.5 8.257A4.5 4.5 0 0112 7.5L16.5 12a4.5 4.5 0 11-7-3.743z"
+                                                    clip-rule="evenodd"
+                                                ></path>
+                                            </g>
+                                            <defs>
+                                                <clipPath
+                                                    id="XzHLcclip0_1199_68"
+                                                >
+                                                    <path
+                                                        fill="currentColor"
+                                                        d="M0 0h24v24H0z"
+                                                    ></path>
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <p class="input__help-text">*Nødvendig felt</p>
+                            </div>
+                            <a class="form__help" href="#">Glemt passord?</a>
+                            <div class="checkbox-group">
+                                <div class="checkbox-group__main">
+                                    <input
+                                        class="checkbox-group__checkbox checkbox-group__checkbox--primary"
+                                        type="checkbox"
+                                        id="remember"
+                                        checked
+                                    />
+                                    <label
+                                        for="remember"
+                                        class="checkbox-group__label"
+                                        >Hold meg innlogget</label
+                                    >
+                                </div>
+                                <button
+                                    class="checkbox-group__info"
+                                    label="Information about the Remember me checkbox"
+                                >
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="24"
+                                        height="24"
+                                        fill="none"
+                                        viewBox="0 0 24 24"
+                                    >
+                                        <path
+                                            fill="currentColor"
+                                            fill-rule="evenodd"
+                                            d="M1.5 12C1.5 6.201 6.201 1.5 12 1.5S22.5 6.201 22.5 12 17.799 22.5 12 22.5 1.5 17.799 1.5 12zM12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm0 5.25a.75.75 0 01.75.75v7.5a.75.75 0 01-1.5 0V6a.75.75 0 01.75-.75zM12 16a1 1 0 100 2 1 1 0 000-2z"
+                                            clip-rule="evenodd"
+                                        ></path>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="form__button-group">
+                                <button
+                                    class="button button--primary form__submit"
+                                >
+                                    Logg på
+                                </button>
+                                <button
+                                    class="button button--primary-inverse form__switch"
+                                >
+                                    Opprette ny konto
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <footer class="footer footer--small text-14">
+                    <a href="#" class="footer__link--small">Hjelp</a>
+                    <a href="#" class="footer__link--small"
+                        >Personvernerklæring</a
+                    >
+                    <a href="#" class="footer__link--small">Vilkår</a>
+                    <a href="#" class="footer__link--small"
+                        >Om Schibsted-konto</a
+                    >
+                </footer>
+            </main>
+        </div>
+    </body>
 </html>
