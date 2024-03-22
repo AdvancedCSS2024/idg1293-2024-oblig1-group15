@@ -1,3 +1,5 @@
+Since the GitHub repository is private, it was not possible to deploy using GitHub Pages, as it required either an upgrade or public repo, and told us to "contact the owner of the repository to enable GitHub Pages".
+
 The oblig did not specify were we should place images and icons used, so a new folder called images was created inside assets for this.
 
 Fabric says H1 should be 34px/2.125rem, but the actual website's log in page H1 uses 1.5rem. We decided to follow Fabric, as one of the goals of the oblig is to show that we can follow the documentation of an existing design system.
