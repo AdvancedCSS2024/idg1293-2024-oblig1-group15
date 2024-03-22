@@ -31,7 +31,7 @@ $lime: #059E6F;
 $pea: #2EE69F;
 $cherry: #D91F0A;
 $watermelon: #FF5844;
-
+$bluegray-300: #c3ccd9;
 // mine
 $background__main: #f8f8f8;
 $background__info: #f1f9ff;
@@ -208,23 +208,32 @@ $background__info: #f1f9ff;
     &__ad {
         width:300px;
         padding:10px;
-        border-radius: 5px;
+        border-radius: 10px;
         position:relative;
 
         text-decoration:none;
+
+        transition-timing-function:cubic-bezier(0.39, 0.575, 0.565, 1);
+        transition-duration: .1s;
+    }
+
+    &__ad:hover {
+        background-color:$ice;
     }
 
     &__anchor {
         text-decoration: none;
-
     }
 
     &__figure {
-        border:2px rgb(189, 215, 241) solid;
+        border:2px $bluegray-300 solid;
         border-radius:10px;
         width:300px;
         height:300px;
+        box-sizing:border-box;
+        margin:0 auto;
         overflow:hidden;
+        position:relative;
     }
 
     &__image {
@@ -232,8 +241,27 @@ $background__info: #f1f9ff;
         max-width:100%;
     }
 
+    &__wordbreak {
+        font-size:1em;
+        margin-top:0.3em;
+        color:black;
+    }
+
     &__price {
+        display:flex;
+        align-items:center;
+
+        height:50px;
+        width:100%;
         color:white;
+        background-image:linear-gradient(to top, rgba(0, 0, 0, 0.904), transparent);
+        bottom:0px;
+        position:absolute;
+
+        &--value {
+            padding-left:10px;
+            font-weight:bold;
+        }
     }
 
     &__favorite {
@@ -250,15 +278,16 @@ $background__info: #f1f9ff;
         align-items:center;
         justify-content: center;
 
-        &--icon {
-            color:white;
+        &--icon:hover {
+            background-image:url(/assets/images/heart_icon_hover.svg)
         }
     }
     
     &__location {
-
+        margin:2px 0 3px 0;
         &--text {
-            color:gray;
+            font-size:0.8em;
+            color:$stone;
         }
     }
 
@@ -270,8 +299,6 @@ $background__info: #f1f9ff;
         color:white;
     }
 }
-    
-    
 
 @media screen and (min-width: 600px) {
     .card {
