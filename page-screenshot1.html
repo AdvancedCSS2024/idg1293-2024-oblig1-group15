@@ -106,33 +106,16 @@
     </header>
     <main class="page-container">
       <section class="search-and-map">
-        <div>
           <div class="search-area">
             <input
               class="search-input"
               type="text"
               placeholder="Søk etter ski eller smoking"
             />
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              fill="none"
-              viewBox="0 0 24 24"
-              part="w-icon-search-24-part"
-            >
-              <title>Forstørrelsesglass</title>
-              <path
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="1.5"
-                d="M13.358 18.153a9.063 9.063 0 1 0-7.09-16.682 9.063 9.063 0 0 0 7.09 16.682m2.862-1.933 7.03 7.03"
-              ></path>
-            </svg>
+            
           </div>
           <!-- map icon -->
-          <div>
+          <div class="search-and-map__map">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -149,7 +132,6 @@
             </svg>
             <span>Kart</span>
           </div>
-        </div>
       </section>
       <section class="grid-layout">
         <div class="grid-layout__item--1">
@@ -289,8 +271,9 @@
       </section>
 
       <section>
-        <div>
-          <h1 class="">Populære annonser</h1>
+        <div class="card__statement">
+          <h1 class="">Anbefalinger til deg</h1>
+          <a href="">Hvorfor anbefaler vi disse annonsene?</a>
         </div>
         <section class="card__box">
           <!-- when you hover over one of the ads, the background-color of article changes to --f-aqua-50 -->

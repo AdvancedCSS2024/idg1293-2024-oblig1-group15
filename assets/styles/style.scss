@@ -1,22 +1,42 @@
 // USE THIS FILE TO CREATE THE LAYOUT AND SPECIFIC RULES FOR SCREENSHOTS 1 and 2
 @use "common.scss";
 
+
 header {
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
+    border-bottom: solid 0.1rem #C3CCD9;
 }
 
 .page-container {
-margin: 0 20rem;
+margin: 0 25rem;
+}
+
+.search-and-map {
+    display: flex;
+    margin-bottom: 3rem;
+    align-items: center;
+
+    &__map {
+        display: flex;
+        gap: 0.5rem;
+        align-items: center;    
+    }
 }
 
 .search-area {
     width: 100%;
-    border: 1px solid;
+
     .search-input {
-        background-color: transparent;
-        border-style: hidden;
-        width: 90%;
+        position: relative;
+        width: 95%;
         height: 100%;
+        background-color: white;
+        background-image: url('/assets/images/search_icon.svg');
+        background-position: right 1rem center;
+        background-repeat: no-repeat;
+        padding: 1rem 0.75rem;
+        border-radius: 0.3rem;
+        font-size: 1rem;
     }
 }
 
@@ -26,8 +46,22 @@ margin: 0 20rem;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
+    gap: 2.5rem;
+
+   a {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        text-decoration: none;
+        color: #464646;
+        align-items: center;
+        padding-block: 1rem;
+        text-align: center;
+
+        svg {
+            color: #06befb; 
+        }
+    }
 }
 
 .grid-layout__item--1 { grid-area: 1 / 1 / 2 / 2; }
@@ -42,15 +76,6 @@ margin: 0 20rem;
 .grid-layout__item--10 { grid-area: 2 / 4 / 3 / 5; }
 .grid-layout__item--11 { grid-area: 2 / 5 / 3 / 6; }
 .grid-layout__item--12 { grid-area: 2 / 6 / 3 / 7; }
-
-.grid-layout a {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-    text-decoration: none;
-}
-
-
 
     
 
