@@ -195,8 +195,9 @@
   position: relative;
   text-decoration: none;
   transition-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
-  transition-duration: 0.1s;
+  transition-duration: .1s;
 }
+
 .card__ad:hover {
   background-color: #F1F9FF;
 }
@@ -220,18 +221,29 @@
   border-radius: 8px;
   max-width: 100%;
 }
+
 .card__wordbreak {
   font-size: 1em;
   margin-top: 0.3em;
   color: black;
 }
+
 .card__price {
   display: flex;
   align-items: center;
   height: 50px;
   width: 100%;
   color: white;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.904), transparent);
+  bottom: 0px;
+  position: absolute;
 }
+
+.card__price--value {
+  padding-left: 10px;
+  font-weight: bold;
+}
+
 .card__favorite {
   display: flex;
   background-color: transparent;
@@ -245,14 +257,13 @@
   align-items: center;
   justify-content: center;
 }
+
 .card__favorite--icon:hover {
   background-image: url(/assets/images/heart_icon_hover.svg);
 }
+
 .card__location {
   margin: 2px 0 3px 0;
-
-.card__favorite--icon {
-  color: white;
 }
 
 .card__location--text {
