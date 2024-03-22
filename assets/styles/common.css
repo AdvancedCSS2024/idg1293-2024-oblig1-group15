@@ -1,8 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Akshar:wght@300..700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Wix+Madefor+Display:wght@400..800&display=swap");
-.body {
+* {
   margin: 0;
+  padding: 0;
+  font-family: "Wix Madefor Display", sans-serif;
+}
+
+.body {
   font-size: 0.938rem;
   line-height: 1.3;
   letter-spacing: .016rem;
@@ -51,7 +56,7 @@
 
 .body a {
   text-decoration: none;
-  color: #0063fb;
+  color: #06befb;
 }
 
 .body a:hover {
@@ -71,6 +76,8 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  font-family: "Wix Madefor Display", sans-serif;
+  margin: 0 20rem;
 }
 
 .nav__anchor {
@@ -92,6 +99,10 @@
 .nav__span--links {
   display: flex;
   gap: 2rem;
+}
+
+.nav__border {
+  color: grey;
 }
 
 .box__favorite {
@@ -176,22 +187,25 @@
   width: 100vw;
 }
 
+.card__statement {
+  font-family: "Wix Madefor Display", sans-serif !important;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
 .card__box {
   display: flex !important;
   flex-wrap: wrap;
-  gap: 35px;
+  gap: 0.3rem;
   justify-content: center;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
-  font-family: "Wix Madefor Display", sans-serif;
+  font-family: "Wix Madefor Display", sans-serif !important;
 }
 
 .card__ad {
-  width: 300px;
-  padding: 10px;
-  border-radius: 10px;
+  width: 18.75rem;
+  padding: 0.625rem;
+  border-radius: 0.625rem;
   position: relative;
   text-decoration: none;
   transition-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
@@ -207,10 +221,10 @@
 }
 
 .card__figure {
-  border: 2px #c3ccd9 solid;
-  border-radius: 10px;
-  width: 300px;
-  height: 300px;
+  border: 0.125rem #c3ccd9 solid;
+  border-radius: 0.625rem;
+  width: 18.75rem;
+  height: 18.75rem;
   box-sizing: border-box;
   margin: 0 auto;
   overflow: hidden;
