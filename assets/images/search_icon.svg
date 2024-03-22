@@ -1,0 +1,18 @@
+<svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="none"
+              viewBox="0 0 24 24"
+              part="w-icon-search-24-part"
+              class="search-input__icon"
+            >
+              <title>Forstørrelsesglass</title>
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="1.5"
+                d="M13.358 18.153a9.063 9.063 0 1 0-7.09-16.682 9.063 9.063 0 0 0 7.09 16.682m2.862-1.933 7.03 7.03"
+              ></path>
+            </svg>
