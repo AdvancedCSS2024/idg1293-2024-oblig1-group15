@@ -245,7 +245,7 @@
 .card__body, .card__header {
   padding-inline: 1rem;
 }
-.card__company-logo {
+.card__company-logos {
   display: flex;
   align-items: center;
   justify-content: space-between;
