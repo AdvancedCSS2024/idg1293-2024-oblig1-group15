@@ -90,6 +90,32 @@ $background__info: #f1f9ff;
     }
 }
 
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+
+    &__anchor {
+        color: black;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+
+    }
+    &__logo--img {
+        width: 6rem;
+    }
+    &__logo--text {
+        font-size: 0.9rem;
+    }&__span--links {
+        display: flex;
+        gap: 2rem;
+
+    }
+}
+
 .box {
     &__favorite {
         position:relative;
