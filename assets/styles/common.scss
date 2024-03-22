@@ -95,7 +95,7 @@ $background__info: #f1f9ff;
     flex-direction: row;
     justify-content: space-between;
     font-family:"Wix Madefor Display", sans-serif;
-    padding: 0 20rem;
+    margin: 0 20rem;
 
 
     &__anchor {
@@ -193,6 +193,12 @@ $background__info: #f1f9ff;
         width: 100vw;
     }
 
+    &__statement {
+        font-family:"Wix Madefor Display", sans-serif !important;
+    }
+
+    
+
     &__box {
         display: flex !important;
         flex-wrap:wrap;
@@ -204,7 +210,7 @@ $background__info: #f1f9ff;
         grid-column-gap: 0px;
         grid-row-gap: 0px;
 
-        font-family:"Wix Madefor Display", sans-serif;
+        font-family:"Wix Madefor Display", sans-serif !important;
     }
     
     &__ad {

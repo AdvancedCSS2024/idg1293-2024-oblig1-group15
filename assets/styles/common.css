@@ -72,7 +72,7 @@
   flex-direction: row;
   justify-content: space-between;
   font-family: "Wix Madefor Display", sans-serif;
-  padding: 0 20rem;
+  margin: 0 20rem;
 }
 
 .nav__anchor {
@@ -178,6 +178,10 @@
   width: 100vw;
 }
 
+.card__statement {
+  font-family: "Wix Madefor Display", sans-serif !important;
+}
+
 .card__box {
   display: flex !important;
   flex-wrap: wrap;
@@ -187,7 +191,7 @@
   grid-template-rows: repeat(2, 1fr);
   grid-column-gap: 0px;
   grid-row-gap: 0px;
-  font-family: "Wix Madefor Display", sans-serif;
+  font-family: "Wix Madefor Display", sans-serif !important;
 }
 
 .card__ad {

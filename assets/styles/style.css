@@ -4,7 +4,7 @@ header {
 }
 
 .page-container {
-  padding: 0 20rem;
+  margin: 0 20rem;
 }
 
 .search-area {
@@ -73,6 +73,13 @@ header {
 
 .grid-layout__item--12 {
   grid-area: 2 / 6 / 3 / 7;
+}
+
+.grid-layout a {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  text-decoration: none;
 }
 
 @media screen and (min-width: 600px) {

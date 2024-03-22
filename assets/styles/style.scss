@@ -6,7 +6,7 @@ header {
 }
 
 .page-container {
-padding: 0 20rem;
+margin: 0 20rem;
 }
 
 .search-area {
@@ -42,6 +42,13 @@ padding: 0 20rem;
 .grid-layout__item--10 { grid-area: 2 / 4 / 3 / 5; }
 .grid-layout__item--11 { grid-area: 2 / 5 / 3 / 6; }
 .grid-layout__item--12 { grid-area: 2 / 6 / 3 / 7; }
+
+.grid-layout a {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    text-decoration: none;
+}
 
 
 
